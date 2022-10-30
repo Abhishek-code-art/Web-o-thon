@@ -21,6 +21,6 @@ app.get("/contact", function(req, res) {
     res.render("contact", {title: "Contact"});
 });
 
-app.listen(3000, function(req, res) {
-    console.log("Server started on port 3000");
+app.listen(process.env.PORT || 3000, function(req, res) {
+    console.log("Server started Successfully");
 });
